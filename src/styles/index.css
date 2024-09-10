@@ -1,12 +1,72 @@
+.todo-container {
+	width: 300px;
+	margin: 0 auto;
+	background-color: #f7f7f7;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	font-family: Arial, sans-serif;
+}
 
-/* 
+h1 {
+	text-align: center;
+	font-size: 24px;
+	color: #333;
+	margin-bottom: 20px;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.input-container {
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 20px;
+}
 
-*/
+input[type="text"] {
+	width: 100%;
+	padding: 10px;
+	border: none;
+	outline: none;
+	font-size: 16px;
+	background-color: #f7f7f7;
+}
+
+.task-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.task-item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+	border-bottom: 1px solid #ccc;
+	font-size: 16px;
+}
+
+.task-item:last-child {
+	border-bottom: none;
+}
+
+.remove-task {
+	cursor: pointer;
+	color: #e74c3c;
+	transition: color 0.3s ease;
+}
+
+.remove-task:hover {
+	color: #c0392b;
+}
+
+.no-ttasks {
+	text-align: center;
+	color: #999;
+	padding: 10px;
+}
+
+.tasks-left {
+	text-align: center;
+	color: #333;
+	font-size: 14px;
+	margin-top: 20px;
+}
